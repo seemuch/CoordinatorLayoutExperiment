@@ -26,7 +26,6 @@
         android:layout_centerHorizontal="true"
         android:background="#ff0000"
         app:layout_scrollFlags="scroll|enterAlways"
-        app:layout_behavior="io.github.seemuch.coordinatorlayoutexperiment.MyBehavior"
         />
 
 </android.support.design.widget.CoordinatorLayout>

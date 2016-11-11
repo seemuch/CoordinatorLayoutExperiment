@@ -1,6 +1,7 @@
 package io.github.seemuch.coordinatorlayoutexperiment;
 
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -38,5 +39,13 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list_view);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+        View redView = findViewById(R.id.red_view);
+
+        MyBehavior fancyBehavior = new MyBehavior();
+        CoordinatorLayout.LayoutParams params =
+                (CoordinatorLayout.LayoutParams) redView.getLayoutParams();
+        params.setBehavior(fancyBehavior);
+
     }
 }

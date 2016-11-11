@@ -39,6 +39,7 @@ public class MyBehavior extends CoordinatorLayout.Behavior<View> {
             return;
         }
         child.setY(currY - dy);
+        // consumed[1] = 1000000000;
     }
 
 }
